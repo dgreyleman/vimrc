@@ -1,0 +1,32 @@
+[Control][b]  - Move back one full screen
+[Control][f]  - Move forward one full screen
+[Control][d]  - Move forward 1/2 screen
+[Control][u]  - Move back (up) 1/2 screen
+
+:e file       - edit another file
+:split file   - split window and load another file
+ctrl-w up     - move cursor up a window
+crlt-w ctrl-w - cycle cursor to another window
+ctrl-w_       - maximize current window
+ctrl-w=       - make all equal size
+10 ctrl-w+    - increase window size by 10
+:vsplit file  - vertical split
+:sview file   - same as split, but readonly
+:hide         - close current window
+:only         - keep only this window
+:ls           - show current buffers
+:b 2          - open buffer #2 in this window
+:vne          - open a new buffer with a vertical split
+:new          - open a new buffer with a horizontal split
+
+/pattern      - search forward for pattern
+?pattern      - search backward for pattern
+n             - repeat forward search
+N             - repeat backward search
+*             - search for word currently under cursor
+g*            - search for partial word currently under cursor
+ctrl-o/ctrl-i - go through jump locations
+[I            - show lines with matching word under cursor 
+
+%s/search/replace   - search whole file and replace
+%s/search/replace/c - confirm each replace
