@@ -5,7 +5,8 @@ set hlsearch 	        	" show highlighted search results
 set incsearch           	" search as characters are entered? Maybe turn off if annoying
 set smartcase               " use case in search if any caps used
 set number 		            " show line numbers
-colorscheme molokai 		" fun colors
+set background=dark
+colorscheme hybrid   		" fun colors
 syntax enable 		    	" enable syntax processing
 set tabstop=4		    	" number of visual spaces per /t
 set shiftwidth=4            " make indenting like a sane person
@@ -40,6 +41,7 @@ nnoremap gV `[v`]
 " edit vimrc/zshrc and load vimrc bindings
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>ezo :e ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>vh :vsp ~/.vim/help<CR>
 
