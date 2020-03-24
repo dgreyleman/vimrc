@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set nowrap               	" don't wrap lines yo
 set hlsearch 	        	" show highlighted search results
 set incsearch           	" search as characters are entered? Maybe turn off if annoying
