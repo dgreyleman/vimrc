@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set nowrap               	" don't wrap lines yo
 set hlsearch 	        	" show highlighted search results
 set incsearch           	" search as characters are entered? Maybe turn off if annoying
@@ -15,7 +13,7 @@ set expandtab		    	" make tabs = spaces like a sane person
 set showcmd             	" show the most recent command in the bottom right
 set cursorline          	" highlight current line somehow
 filetype indent on      	" some wizardry to turn on filetype detection and load language specific indent files?
-set wildmenu            	" some autocomplete bullshit? yes very nice :thumbsup:
+set wildmenu            	" some autocomplete nonsense? yes very nice :thumbsup:
 set lazyredraw                  " only redraw when necessary I guess
 set showmatch                   " highlight matching [{(_)}]
 set backspace=indent,eol,start  " backspace like a human
