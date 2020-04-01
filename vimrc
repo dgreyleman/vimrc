@@ -49,7 +49,9 @@ nnoremap <leader>vh :vsp ~/.vim/help<CR>
 nnoremap <leader>s :mksession<CR>
 
 " ez recursive multiple file search for text
-nnoremap <expr> <leader>si ":grep! -F \'" . input("") . "\' **/*." . printf(&filetype) . "<CR>:cw<CR>"
-nnoremap <expr> <leader>sh ":grep! -F \'<C-R><C-W>\' **/*." . printf(&filetype) . "<CR>:cw<CR>"
+nnoremap <expr> <leader>si ":grep! -F \'" . input("") . "\' **/*." . printf(expand('%:e')) . "<CR>:cw<CR>"
+nnoremap <expr> <leader>sh ":grep! -F \'<C-R><C-W>\' **/*." . printf(expand('%:e')) . "<CR>:cw<CR>"
 autocmd! FileType qf nnoremap <buffer> <enter> <C-W><enter><C-W>L
 
+" find/replace shortcut
+nnoremap <leader>fr :%s/
